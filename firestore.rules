@@ -1,0 +1,8 @@
+rules_version = '2';
+// All data access goes through the Next.js API (firebase-admin, which bypasses rules).
+// Clients get NO direct read/write access, so quiz answers, timers and scores can't be tampered with.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} { allow read, write: if false; }
+  }
+}

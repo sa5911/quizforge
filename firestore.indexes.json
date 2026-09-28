@@ -1,0 +1,8 @@
+{
+  "indexes": [
+    { "collectionGroup": "attempts", "queryScope": "COLLECTION", "fields": [{ "fieldPath": "quizId", "order": "ASCENDING" }, { "fieldPath": "startedAt", "order": "DESCENDING" }] },
+    { "collectionGroup": "attempts", "queryScope": "COLLECTION", "fields": [{ "fieldPath": "userId", "order": "ASCENDING" }, { "fieldPath": "startedAt", "order": "DESCENDING" }] },
+    { "collectionGroup": "attempts", "queryScope": "COLLECTION", "fields": [{ "fieldPath": "status", "order": "ASCENDING" }, { "fieldPath": "expiresAt", "order": "ASCENDING" }] }
+  ],
+  "fieldOverrides": []
+}
